@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>CV Web - Víctor Outeiro Romay</title>
+  </head>
+  <body>
+    <!-- TOGGLE MENU BUTTON (mobile only) -->
+    <button class="menu-toggle">☰</button>
+
+    <!-- SIDEBAR -->
+    <aside id="sidebar">
+      <h2>Víctor Outeiro</h2>
+      <nav>
+        <ul>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#formation">Formación</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- SOBRE MÍ -->
+      <section id="about">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy desarrollador web en formación, con background en soporte técnico
+          y sonido. Mi objetivo es especializarme en la creación de aplicaciones
+          web eficientes, accesibles y bien diseñadas.
+        </p>
+      </section>
+
+      <!-- FORMACIÓN -->
+      <section id="formation">
+        <h2>Formación</h2>
+        <ul>
+          <li>
+            Certificado de Profesionalidad en Desarrollo de Aplicaciones con
+            Tecnologías Web (En curso)
+          </li>
+          <li>Bootcamp Full-stack Developer – 2023</li>
+          <li>
+            Ciclo Superior en Desarrollo de Aplicaciones Informáticas – 2011
+          </li>
+          <li>Ciclo Superior en Técnico de Sonido – 2008</li>
+        </ul>
+      </section>
+
+      <!-- EXPERIENCIA -->
+      <section id="experience">
+        <h2>Experiencia</h2>
+        <p>
+          Experiencia previa en soporte técnico, tutoría online y gestión de
+          equipos, con foco en la resolución de incidencias y adaptación
+          tecnológica. Actualmente busco orientar mi carrera hacia el desarrollo
+          web.
+        </p>
+      </section>
+
+      <!-- HABILIDADES -->
+      <section id="skills">
+        <h2>Habilidades</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Git & GitHub</li>
+          <li>SQL básico</li>
+          <li>Resolución de incidencias</li>
+          <li>Trabajo en equipo</li>
+        </ul>
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contact">
+        <h2>Contacto</h2>
+        <p>
+          📧
+          <a href="mailto:victor_outeiro@hotmail.com"
+            >victor_outeiro@hotmail.com</a
+          >
+        </p>
+        <p>
+          🔗
+          <a href="https://www.linkedin.com/in/victor-outeiro/">LinkedIn</a> |
+          <a href="https://github.com/Radu-A">GitHub</a>
+        </p>
+        <p>📱 675534138</p>
+      </section>
+    </main>
+
+    <script>
+      // Toggle sidebar en mobile
+      const toggleBtn = document.querySelector(".menu-toggle");
+      const sidebar = document.querySelector("#sidebar");
+      // Abrir/cerrar sidebar al pulsar el botón
+      toggleBtn.addEventListener("click", () => {
+        event.stopPropagation();
+        sidebar.classList.toggle("active");
+      });
+      // Cerrar sidebar al hacer clic fuera de ella
+      document.addEventListener("click", (event) => {
+        if (
+          sidebar.classList.contains("active") &&
+          !sidebar.contains(event.target)
+        ) {
+          sidebar.classList.remove("active");
+        }
+      });
+    </script>
+  </body>
+</html>
