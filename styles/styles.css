@@ -99,7 +99,6 @@ section {
   min-height: 100vh;
   max-width: 900px;
   margin: auto;
-  padding: 3rem 0;
 }
 
 section h2 {
@@ -116,6 +115,10 @@ section h4 {
 
 #about img {
   width: 100%;
+}
+
+#about-text-div {
+  padding: 2rem 1rem;
 }
 
 /* --------------------
