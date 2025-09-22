@@ -1,8 +1,16 @@
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
   --color-bg: #f9fafb;
-  --color-text: #333;
-  --color-accent: #2563eb;
-  --color-secondary: #64748b;
+  --color-text: #555;
+  --color-accent: #333;
+  --color-secondary: #aaa;
+  --color-elements: #474fee;
   --sidebar-width: 240px;
 }
 
@@ -13,7 +21,7 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-family: "Quicksand", Helvetica, sans-serif;
   background: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
@@ -99,11 +107,15 @@ section h2 {
   color: var(--color-accent);
 }
 
+section h4 {
+  color: var(--color-secondary);
+  font-weight: 400;
+}
+
 /* About me */
 
-#about {
-  background-image: url(../assets/lauren-mancke-aOC7TSLb1o8-unsplash.jpg);
-  background-size: cover;
+#about img {
+  width: 100%;
 }
 
 /* --------------------
