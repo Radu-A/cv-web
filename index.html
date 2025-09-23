@@ -230,55 +230,205 @@
       <section id="projects">
         <h2>Proyectos</h2>
 
-        <div class="project-card">
-          <img
-            src="./assets/images/proyecto1-thumb.jpg"
-            alt="Captura del Proyecto 1"
-            class="project-thumb"
-          />
-
+        <!-- Proyecto 1 -->
+        <article class="project-card">
+          <h3 class="project-title">Salty</h3>
+          <a
+            class="github-link"
+            href="https://github.com/Radu-A/salty"
+            target="_blank"
+          >
+            <img src="./assets/icons/github-mark.svg" alt="github icon" />
+          </a>
+          <a
+            class="live-link"
+            href="https://salty-chi.vercel.app/"
+            target="_blank"
+          >
+            <img
+              src="./assets/images/screenshot-salty.png"
+              alt="Captura del proyecto Salty"
+              class="project-thumb"
+            />
+          </a>
           <div class="project-content">
-            <h3 class="project-title">Proyecto 1</h3>
-            <span class="project-type">Full-stack</span>
             <p class="project-desc">
-              Aplicación web para gestionar tareas con React y Node.js.
+              Web de recomendación de recetas donde eliges categoría y obtienes
+              cinco opciones aleatorias con foto. Al pinchar en una receta
+              accedes a ingredientes e instrucciones completas.
             </p>
-
             <div class="project-tech">
-              <span>React</span><span>Node.js</span><span>MongoDB</span>
-            </div>
-
-            <div class="project-links">
-              <a href="https://demo.com" class="btn-demo" target="_blank"
-                >Live Demo</a
-              >
-              <a
-                href="https://github.com/tu-repo"
-                class="btn-repo"
-                target="_blank"
-                >Repositorio</a
-              >
+              <span class="tech">HTML</span>
+              <span class="tech">CSS</span>
+              <span class="tech">JavaScript</span>
+              <span class="tech">API</span>
             </div>
           </div>
-        </div>
+        </article>
+
+        <!-- Proyecto 2 -->
+        <article class="project-card">
+          <h3 class="project-title">Web Personal</h3>
+          <a
+            class="github-link"
+            href="https://github.com/Radu-A/personal-web"
+            target="_blank"
+          >
+            <img src="./assets/icons/github-mark.svg" alt="github icon" />
+          </a>
+          <a
+            class="live-link"
+            href="https://web-personal-omega.vercel.app/index.html"
+            target="_blank"
+          >
+            <img
+              src="./assets/images/screenshot-web-personal.png"
+              alt="Captura del proyecto Salty"
+              class="project-thumb"
+            />
+          </a>
+          <div class="project-content">
+            <p class="project-desc">
+              Sitio personal con secciones inicio, biografía, portfolio y
+              contacto, mostrando logros y experiencias. Incluye formulario
+              funcional y navegación clara para presentar información de manera
+              ordenada.
+            </p>
+            <div class="project-tech">
+              <span class="tech">HTML</span>
+              <span class="tech">CSS</span>
+              <span class="tech">JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 3 -->
+        <article class="project-card">
+          <h3 class="project-title">Pokémon List</h3>
+          <a
+            class="github-link"
+            href="https://github.com/Radu-A/pokeapp"
+            target="_blank"
+          >
+            <img src="./assets/icons/github-mark.svg" alt="github icon" />
+          </a>
+          <a
+            class="live-link"
+            href="https://poke-listing.netlify.app/"
+            target="_blank"
+          >
+            <img
+              src="./assets/images/screenshot-pokemon.png"
+              alt="Captura del proyecto Salty"
+              class="project-thumb"
+            />
+          </a>
+          <div class="project-content">
+            <p class="project-desc">
+              Buscador de Pokémon que genera tarjetas con imagen y nombre y las
+              añade a la página. Permite consultar descripciones detalladas de
+              cada criatura con un clic.
+            </p>
+            <div class="project-tech">
+              <span class="tech">HTML</span>
+              <span class="tech">CSS</span>
+              <span class="tech">JavaScript</span>
+              <span class="tech">React</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 4 -->
+        <article class="project-card">
+          <h3 class="project-title">Crowdfunding Product</h3>
+          <a
+            class="github-link"
+            href="https://crowdfunding-product-page-main-iota.vercel.app/"
+            target="_blank"
+          >
+            <img src="./assets/icons/github-mark.svg" alt="github icon" />
+          </a>
+          <a
+            class="live-link"
+            href="https://crowdfunding-product-page-main-iota.vercel.app/"
+            target="_blank"
+          >
+            <img
+              src="./assets/images/screenshot-mastercraft.png"
+              alt="Captura del proyecto Salty"
+              class="project-thumb"
+            />
+          </a>
+          <div class="project-content">
+            <p class="project-desc">
+              Página de producto estilo crowdfunding con diseño responsive
+              complejo, grid adaptable, menú hamburguesa y modales. Todo
+              construido desde cero para replicar un desafío de interfaz real.
+            </p>
+            <div class="project-tech">
+              <span class="tech">HTML</span>
+              <span class="tech">CSS</span>
+              <span class="tech">JavaScript</span>
+            </div>
+          </div>
+        </article>
       </section>
 
       <!-- CONTACTO -->
       <section id="contact">
         <h2>Contacto</h2>
-        <p>
-          📧
-          <a href="mailto:victor_outeiro@hotmail.com"
-            >victor_outeiro@hotmail.com</a
-          >
-        </p>
-        <p>
-          🔗
-          <a href="https://www.linkedin.com/in/victor-outeiro/">LinkedIn</a> |
-          <a href="https://github.com/Radu-A">GitHub</a>
-        </p>
-        <p>📱 675534138</p>
+        <div id="contact-grid">
+          <article class="contact-card" id="contact-card-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.24597855229!2d-5.981484000000051!3d37.40766050000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126955d811facb%3A0xb77b09ade506b2e3!2sC.%20Ermita%20del%20Roc%C3%ADo%2C%2041009%20Sevilla!5e0!3m2!1ses!2ses!4v1758658111545!5m2!1ses!2ses"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </article>
+          <article class="contact-card">
+            <img
+              class="contact-icon"
+              src="./assets/icons/icon-location.svg"
+              alt="icono ubicación"
+            />
+            <h4>Ermita Del Rocío, Sevilla</h4>
+          </article>
+          <article class="contact-card">
+            <img
+              class="contact-icon"
+              src="./assets/icons/icon-phone.svg"
+              alt="icono teléfono"
+            />
+            <h4>+34 675 53 41 38</h4>
+          </article>
+          <article class="contact-card">
+            <img
+              class="contact-icon"
+              src="./assets/icons/icon-mail.svg"
+              alt="icono correo"
+            />
+            <h4>victor_outeiro@hotmail.com</h4>
+          </article>
+        </div>
       </section>
+        <footer id="contact-footer">
+          <div id="contact-footer-links">
+            <a
+              href="https://www.linkedin.com/in/victor-outeiro/"
+              target="_blank"
+            >
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/Radu-A" target="_blank">
+              <span>GitHub</span>
+            </a>
+          </div>
+          <p id="copy-right">© 2025 All rights reserved.</p>
+        </footer>
     </main>
 
     <script>
