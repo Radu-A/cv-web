@@ -1,0 +1,11 @@
+
+Estructura - grid mínimo 3 zonas:
+    Header
+    Body
+    Footer
+
+Body - grid + flex
+
+CSS - archivo externoç
+
+Multimedia - foto/video/audio
