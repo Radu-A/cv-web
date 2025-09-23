@@ -98,7 +98,7 @@ main {
 section {
   min-height: 100vh;
   max-width: 900px;
-  margin: auto;
+  margin: 2rem 1rem;
 }
 
 section h2 {
