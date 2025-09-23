@@ -1,12 +1,12 @@
-
 /* Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --color-bg: #f9fafb;
+  --color-bg-dark: #ececec;
   --color-text: #555;
   --color-accent: #333;
   --color-secondary: #aaa;
@@ -26,7 +26,6 @@ body {
   color: var(--color-text);
   line-height: 1.6;
   display: grid;
-  /* grid-template-columns: 1fr; */
 }
 
 a {
@@ -101,18 +100,47 @@ section {
   margin: 2rem 1rem;
 }
 
-section h2 {
+h2 {
+  text-align: center;
   margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 900;
   color: var(--color-accent);
 }
 
-section h3 {
+h2::after {
+  display: block;
+  opacity: 1;
+  content: "";
+  height: 3px;
+  width: 50px;
+  margin: 10px auto;
+  background-color: #e6e7e8;
+  z-index: 0;
+}
+
+h3 {
   color: var(--color-accent);
 }
 
-section h4 {
+/* h3::after {
+  display: block;
+  opacity: 1;
+  content: "";
+  height: 2px;
+  width: 100%;
+  margin: 10px auto;
+  background-color: #e6e7e8;
+  z-index: 0;
+} */
+
+h4 {
+  font-weight: 800;
+  color: var(--color-accent);
+}
+
+span {
   color: var(--color-secondary);
-  font-weight: 400;
 }
 
 article {
@@ -125,11 +153,8 @@ article {
   width: 100%;
 }
 
-#who h3 {
-  border-bottom: 2rem solid var(--color-text);
-}
-
 #who-h2 {
+  text-align: start;
   font-size: 2.5rem;
   line-height: 3rem;
   font-weight: 900;
@@ -137,6 +162,11 @@ article {
 
 #who-h2 span {
   font-weight: 100;
+  color: #333;
+}
+
+#who-h2::after {
+  display: none;
 }
 
 .what-card {
@@ -151,7 +181,6 @@ article {
   width: 34px;
   align-self: center;
   justify-self: center;
-  background-color: var(--color-bg));
 }
 
 .what-header {
@@ -163,6 +192,58 @@ article {
 
 .what-description {
   grid-column: 2/3;
+}
+
+/* FORMATION */
+
+.formation-card {
+  display: grid;
+  grid-template-rows: 25px auto;
+  grid-template-columns: 52px auto auto;
+  gap: 0rem 1rem;
+}
+
+.formation-year {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.formation-title,
+.formation-name,
+.formation-description {
+  grid-column: 2/3;
+}
+
+.formation-title {
+  color: var(--color-secondary);
+}
+
+.formation-description {
+  grid-column: 2/3;
+}
+
+/* SKILLS */
+
+.skill {
+  margin-bottom: 0.8rem;
+}
+
+.skill h4 {
+  margin-bottom: 0.3rem;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 8px;
+  background: var(--color-secondary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-level {
+  height: 100%;
+  background: var(--color-elements);
+  border-radius: 4px 0 0 4px;
 }
 
 /* --------------------
@@ -182,5 +263,4 @@ article {
   .menu-toggle {
     display: none;
   }
-
 }
