@@ -463,6 +463,53 @@
           />
           <h4>victor_outeiro@hotmail.com</h4>
         </article>
+        <article id="contact-form-article">
+          <!-- Colocar dentro de <article id="contact-form"> -->
+          <h3>¿En qué puedo ayudarte?</h3>
+
+          <form id="contact-form" action="#" method="POST" novalidate>
+            <!-- Nombre -->
+            <input
+              type="text"
+              name="name"
+              placeholder="Nombre"
+              autocomplete="name"
+              required
+              maxlength="80"
+            />
+
+            <!-- Email -->
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              autocomplete="email"
+              required
+              maxlength="254"
+            />
+
+            <!-- Asunto -->
+            <input
+              type="text"
+              name="subject"
+              placeholder="Asunto"
+              required
+              maxlength="120"
+            />
+
+            <!-- Mensaje -->
+            <textarea
+              name="message"
+              rows="6"
+              placeholder="Mensaje"
+              required
+              maxlength="3000"
+            ></textarea>
+
+            <!-- Botón -->
+            <button type="submit">Enviar mensaje</button>
+          </form>
+        </article>
       </section>
       <footer id="contact-footer">
         <div id="contact-footer-links">
