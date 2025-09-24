@@ -40,13 +40,14 @@ aside {
   position: fixed;
   left: -100%;
   top: 0;
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: var(--sidebar-width);
   background: #fff;
   box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
   transition: left 0.3s ease;
   z-index: 1000;
-  padding: 2rem 0rem;
 }
 
 aside.active {
@@ -56,10 +57,11 @@ aside.active {
 #portrait {
   display: block;
   width: 100%;
+  margin-top: 1rem;
 }
 
 aside h2 {
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   background-color: var(--color-elements);
   font-size: 2rem;
   font-weight: 200;
@@ -70,17 +72,28 @@ aside h2 {
 nav ul {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding: 0rem 1rem;
+  /* gap: 1rem; */
+  /* padding: 0rem 1rem; */
   list-style: none;
+}
+
+nav ul li {
+  border-bottom: 1px solid #ccc;
 }
 
 nav ul li a {
   display: flex;
-  /* font-weight:bold; */
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 0.5rem 0.8rem 2rem;
+}
+
+nav ul li a img {
+  width: 2rem;
 }
 
 nav ul li a span {
+  font-weight: 500;
   color: var(--color-accent);
 }
 
@@ -330,10 +343,6 @@ span {
   border-radius: 0.5rem;
 }
 
-#contact-grid {
-  flex: 1;
-}
-
 #contact-card-map {
   padding: 0;
 }
@@ -348,6 +357,7 @@ span {
 }
 
 #contact-footer {
+  margin-top: auto;
   padding: 1rem 0rem;
   background-color: var(--color-bg-dark);
 }
@@ -396,15 +406,15 @@ span {
 
   section {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
       "header header"
       "card-1 card-2"
       "card-3 card-4";
     grid-template-columns: 1fr 1fr;
-    align-content: start
+    align-content: start;
   }
 
-  section>h2 {
+  section > h2 {
     grid-area: header;
   }
 }
@@ -428,6 +438,10 @@ span {
   }
 
   .menu-toggle {
+    display: none;
+  }
+
+  #who-img {
     display: none;
   }
 }
