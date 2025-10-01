@@ -23,14 +23,14 @@ _(To be added later)_
 
 ---
 
-## 👤 About
+## About
 
 This is my personal CV website, designed to present my professional profile, education, skills, and portfolio projects.  
 It is fully responsive, adapting smoothly from mobile to desktop layouts.
 
 ---
 
-## ✨ Features
+## Features
 
 - Responsive sidebar navigation (mobile & desktop).
 - Multiple sections: About, Education, Skills, Projects, Contact.
@@ -40,7 +40,7 @@ It is fully responsive, adapting smoothly from mobile to desktop layouts.
 
 ---
 
-## 🛠 Technologies
+## Technologies
 
 - **HTML5** for semantic structure.
 - **CSS3** with:
@@ -52,7 +52,7 @@ It is fully responsive, adapting smoothly from mobile to desktop layouts.
 
 ---
 
-## 📚 Lessons Learned
+## Lessons Learned
 
 While building this project, I improved my skills in:
 
@@ -63,7 +63,7 @@ While building this project, I improved my skills in:
 
 ---
 
-## 🚀 Projects
+## Projects
 
 The website showcases some of my personal and practice projects, such as:
 
@@ -74,7 +74,7 @@ The website showcases some of my personal and practice projects, such as:
 
 ---
 
-## 📬 Contact
+## Contact
 
 - **Location**: Seville, Spain
 - **Phone**: +34 675 53 41 38
