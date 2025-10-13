@@ -88,6 +88,7 @@ nav ul li a {
   align-items: center;
   gap: 8px;
   padding: 12px 8px 12px 32px;
+  cursor: pointer;
 }
 
 nav ul li a img {
@@ -123,13 +124,33 @@ main {
   flex-direction: column;
   align-items: center;
   margin-left: 0;
-  transition: margin-left 0.3s ease;
+  /* transition: margin-left 0.3s ease; */
 }
 
 section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
   min-height: 100vh;
   max-width: 900px;
   margin: 1rem 1rem;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  scroll-margin-top: 100px; /* Compensa header fijo si lo hay */
+}
+
+section.active {
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+  position: relative;
 }
 
 article {
@@ -407,6 +428,7 @@ span {
 }
 
 #contact-footer {
+  width: 100%;
   margin-top: auto;
   padding: 16px 0px;
   background-color: var(--color-bg-dark);
