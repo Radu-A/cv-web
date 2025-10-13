@@ -10,6 +10,7 @@
   --color-text: #555;
   --color-accent: #333;
   --color-secondary: #aaa;
+  --color-terciary: #d4d4d4;
   --color-elements: #474fee;
   --sidebar-width: 220px;
 }
@@ -289,30 +290,52 @@ span {
 
 /* SKILLS */
 
+#fundamentals {
+  grid-column: 1/3;
+}
+
+#fundamentals .tech {
+  background-color: var(--color-elements);
+  border: none;
+}
+
+#fundamentals span {
+  color: var(--color-bg);
+}
+
+.tech-container {
+  grid-column: 2;
+}
+
 .skill-group {
   min-width: 350px;
+  display: grid;
+  grid-template-rows: 52px auto;
+  grid-template-columns: 52px auto;
+  gap: 0rem 1rem;
+}
+
+.skill-group img {
+  width: 34px;
+  align-self: center;
+  justify-self: center;
 }
 
 .skill {
+  grid-column: 2;
   margin-bottom: 0.8rem;
-}
-
-.skill h4 {
-  margin-bottom: 0.3rem;
 }
 
 .skill-bar {
   width: 100%;
-  height: 8px;
-  background: var(--color-secondary);
-  border-radius: 4px;
+  height: 6px;
+  background: var(--color-terciary);
   overflow: hidden;
 }
 
 .skill-level {
-  height: 100%;
+  height: 6px;
   background: var(--color-elements);
-  border-radius: 4px 0 0 4px;
 }
 
 /* PROJECTS */
