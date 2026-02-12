@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -100,7 +100,9 @@
             <span>GitHub</span>
           </a>
         </div>
-        <p id="copy-right">© 2025 All rights reserved.</p>
+        <p id="copy-right">
+          © <span class="year-span"></span> All rights reserved.
+        </p>
       </footer>
     </aside>
 
@@ -115,15 +117,17 @@
           />
         </article>
         <article id="who-text">
-          <span>Web Developer</span>
+          <span>Full Stack Developer</span>
           <h2 id="who-h2">
             <span>Hola, soy</span>
             Víctor Outeiro.
           </h2>
           <p>
-            Soy desarrollador web en formación, con background en soporte
-            técnico y sonido. Mi objetivo es especializarme en la creación de
-            aplicaciones web eficientes y accesibles.
+            Hola, soy Víctor Outeiro. Desarrollador web especializado en el
+            ecosistema JavaScript. Combino mi background técnico con un dominio
+            sólido del stack PERN (PostgreSQL, Express, React, Node) y Angular.
+            Mi objetivo es crear soluciones digitales completas, desde la base
+            de datos hasta la interfaz de usuario.
           </p>
         </article>
         <article id="what">
@@ -137,9 +141,10 @@
               />
               <h4 class="what-header">Front-end</h4>
               <p class="what-description">
-                Diseño y desarrollo interfaces web atractivas, funcionales y
-                accesibles, aplicando HTML, CSS y JavaScript para ofrecer
-                experiencias de usuario intuitivas, rápidas y responsivas.
+                Diseño y desarrollo interfaces web dinámicas y escalables. He
+                evolucionado del HTML/CSS puro al dominio de frameworks modernos
+                como React y Angular, creando experiencias de usuario fluidas
+                (SPA) y totalmente responsivas que consumen APIs complejas.
               </p>
             </div>
             <div class="what-card">
@@ -150,9 +155,11 @@
               />
               <h4 class="what-header">Back-end</h4>
               <p class="what-description">
-                Implemento y mantengo la lógica del servidor, bases de datos y
-                APIs, asegurando seguridad, rendimiento y escalabilidad para
-                aplicaciones web modernas orientadas a usuarios finales.
+                Desarrollo la arquitectura del lado del servidor utilizando
+                Node.js y Express. Diseño y gestiono bases de datos relacionales
+                (PostgreSQL) y no relacionales (MongoDB), asegurando la
+                integridad de los datos, la seguridad y el rendimiento óptimo de
+                las aplicaciones.
               </p>
             </div>
           </div>
@@ -252,16 +259,16 @@
           <h4 class="what-header">Desarrollo Web</h4>
           <div class="tech-container">
             <div class="tech">
-              <span>HTML5</span>
+              <span>Angular</span>
             </div>
             <div class="tech">
-              <span>CSS3</span>
-            </div>
-            <div class="tech">
-              <span>JavaScript</span>
+              <span>RxJS</span>
             </div>
             <div class="tech">
               <span>React</span>
+            </div>
+            <div class="tech">
+              <span>Tailwind</span>
             </div>
             <div class="tech">
               <span>Node.js</span>
@@ -274,6 +281,15 @@
             </div>
             <div class="tech">
               <span>PostgreSQL</span>
+            </div>
+            <div class="tech">
+              <span>HTML5</span>
+            </div>
+            <div class="tech">
+              <span>CSS3</span>
+            </div>
+            <div class="tech">
+              <span>JavaScript</span>
             </div>
             <div class="tech">
               <span>Git</span>
@@ -363,14 +379,16 @@
 
         <!-- Proyecto 1 -->
         <article class="project-card">
-          <h3 class="project-title">Un Gallego Por Sevilla</h3>
-          <a
-            class="github-link"
-            href="https://github.com/Radu-A/galician-man-in-seville"
-            target="_blank"
-          >
-            <img src="./assets/icons/github-mark.svg" alt="github icon" />
-          </a>
+          <div class="card-header">
+            <h3 class="project-title">Un Gallego Por Sevilla</h3>
+            <a
+              class="github-link"
+              href="https://github.com/Radu-A/galician-man-in-seville"
+              target="_blank"
+            >
+              <img src="./assets/icons/github-mark.svg" alt="github icon" />
+            </a>
+          </div>
           <a
             class="live-link"
             href="https://galician-man-in-seville.vercel.app//"
@@ -399,14 +417,54 @@
         </article>
         <!-- Proyecto 2 -->
         <article class="project-card">
-          <h3 class="project-title">ToDo List</h3>
+          <div class="card-header">
+            <h3 class="project-title">Dummy App</h3>
+            <a
+              class="github-link"
+              href="https://github.com/Radu-A/dummy-app"
+              target="_blank"
+            >
+              <img src="./assets/icons/github-mark.svg" alt="github icon" />
+            </a>
+          </div>
           <a
-            class="github-link"
-            href="https://github.com/Radu-A/todo-list"
+            class="live-link"
+            href="https://dummy-app-jade.vercel.app/"
             target="_blank"
           >
-            <img src="./assets/icons/github-mark.svg" alt="github icon" />
+            <img
+              src="./assets/images/screenshot-dummy-app.png"
+              alt="Captura del proyecto Salty"
+              class="project-thumb"
+            />
           </a>
+          <div class="project-content">
+            <p class="project-desc">
+              Implementa patrones avanzados como Lazy Loading para optimización
+              de carga, Guards para seguridad de rutas e Interceptors para el
+              manejo centralizado de peticiones HTTP.
+            </p>
+            <div class="project-tech">
+              <span class="tech">Angular</span>
+              <span class="tech">TypeScript</span>
+              <span class="tech">RxJS</span>
+              <span class="tech">Material Design</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 3 -->
+        <article class="project-card">
+          <div class="card-header">
+            <h3 class="project-title">ToDo List</h3>
+            <a
+              class="github-link"
+              href="https://github.com/Radu-A/todo-list"
+              target="_blank"
+            >
+              <img src="./assets/icons/github-mark.svg" alt="github icon" />
+            </a>
+          </div>
           <a
             class="live-link"
             href="https://todo-list-tau-ten-35.vercel.app/"
@@ -436,16 +494,18 @@
           </div>
         </article>
 
-        <!-- Proyecto 3 -->
+        <!-- Proyecto 4 -->
         <article class="project-card">
-          <h3 class="project-title">Weather App</h3>
-          <a
-            class="github-link"
-            href="https://github.com/Radu-A/weather-app"
-            target="_blank"
-          >
-            <img src="./assets/icons/github-mark.svg" alt="github icon" />
-          </a>
+          <div class="card-header">
+            <h3 class="project-title">Weather App</h3>
+            <a
+              class="github-link"
+              href="https://github.com/Radu-A/weather-app"
+              target="_blank"
+            >
+              <img src="./assets/icons/github-mark.svg" alt="github icon" />
+            </a>
+          </div>
           <a
             class="live-link"
             href="https://weather-app-delta-pink-13.vercel.app/"
@@ -472,16 +532,18 @@
           </div>
         </article>
 
-        <!-- Proyecto 4 -->
+        <!-- Proyecto 5 -->
         <article class="project-card">
-          <h3 class="project-title">Salty</h3>
-          <a
-            class="github-link"
-            href="https://github.com/Radu-A/salty"
-            target="_blank"
-          >
-            <img src="./assets/icons/github-mark.svg" alt="github icon" />
-          </a>
+          <div class="card-header">
+            <h3 class="project-title">Salty</h3>
+            <a
+              class="github-link"
+              href="https://github.com/Radu-A/salty"
+              target="_blank"
+            >
+              <img src="./assets/icons/github-mark.svg" alt="github icon" />
+            </a>
+          </div>
           <a
             class="live-link"
             href="https://salty-chi.vercel.app/"
@@ -508,16 +570,18 @@
           </div>
         </article>
 
-        <!-- Proyecto 5 -->
+        <!-- Proyecto 6 -->
         <article class="project-card">
-          <h3 class="project-title">Web Personal</h3>
-          <a
-            class="github-link"
-            href="https://github.com/Radu-A/personal-web"
-            target="_blank"
-          >
-            <img src="./assets/icons/github-mark.svg" alt="github icon" />
-          </a>
+          <div class="card-header">
+            <h3 class="project-title">Web Personal</h3>
+            <a
+              class="github-link"
+              href="https://github.com/Radu-A/personal-web"
+              target="_blank"
+            >
+              <img src="./assets/icons/github-mark.svg" alt="github icon" />
+            </a>
+          </div>
           <a
             class="live-link"
             href="https://web-personal-omega.vercel.app/index.html"
@@ -645,7 +709,9 @@
             <span>GitHub</span>
           </a>
         </div>
-        <p id="copy-right">© 2025 All rights reserved.</p>
+        <p id="copy-right">
+          © <span class="year-span"></span> All rights reserved.
+        </p>
       </footer>
     </main>
     <script src="./script/script.js"></script>

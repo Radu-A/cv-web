@@ -53,3 +53,11 @@ if (initialHash && document.getElementById(initialHash)) {
 } else {
   showSection("about");
 }
+
+// 6. Año automático en footer
+const currentYear = new Date().getFullYear();
+const yearSpan = document.querySelectorAll('.year-span')
+
+yearSpan.forEach(span=>{
+  span.innerHTML = currentYear
+})
