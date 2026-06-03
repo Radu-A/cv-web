@@ -140,8 +140,8 @@ section {
   height: 0;
   overflow: hidden;
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
   scroll-margin-top: 100px; /* Compensa header fijo si lo hay */
 }
 
@@ -315,10 +315,18 @@ span {
   gap: 0rem 1rem;
 }
 
+#fundamentals {
+  row-gap: 1rem;
+}
+
 .skill-group img {
   width: 34px;
   align-self: center;
   justify-self: center;
+}
+
+.skill-category {
+  grid-column: 2;
 }
 
 .skill {
